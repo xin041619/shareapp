@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="share" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO1-RB-Fdt">
+                                <rect key="frame" x="196" y="194" width="202" height="30"/>
+                                <state key="normal" title="Browse">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzC-dc-jFt">
+                                <rect key="frame" x="196" y="242" width="202" height="30"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sxn-Ft-AnO" kind="showDetail" id="o5c-zR-M0L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EzC-dc-jFt" firstAttribute="top" secondItem="CO1-RB-Fdt" secondAttribute="bottom" constant="14" id="Hym-WA-bei"/>
+                            <constraint firstItem="CO1-RB-Fdt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="174" id="Px5-Ap-6vX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CO1-RB-Fdt" secondAttribute="trailing" constant="103" id="Wob-4l-Vte"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EzC-dc-jFt" secondAttribute="trailing" constant="136" id="aYh-DF-xav"/>
+                            <constraint firstItem="CO1-RB-Fdt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="119" id="e4O-2z-133"/>
+                            <constraint firstAttribute="centerX" secondItem="CO1-RB-Fdt" secondAttribute="centerX" constant="-8" id="gOY-1J-aOw"/>
+                            <constraint firstItem="EzC-dc-jFt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="152" id="kM7-xX-vVc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Px5-Ap-6vX"/>
+                                <exclude reference="Wob-4l-Vte"/>
+                                <exclude reference="e4O-2z-133"/>
+                                <exclude reference="gOY-1J-aOw"/>
+                                <exclude reference="Hym-WA-bei"/>
+                                <exclude reference="aYh-DF-xav"/>
+                                <exclude reference="kM7-xX-vVc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Px5-Ap-6vX"/>
+                                <include reference="Wob-4l-Vte"/>
+                                <include reference="e4O-2z-133"/>
+                                <include reference="gOY-1J-aOw"/>
+                                <include reference="Hym-WA-bei"/>
+                                <include reference="aYh-DF-xav"/>
+                                <include reference="kM7-xX-vVc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="jCW-2l-Lts"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1486.5" y="664"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Cp-mq-ReA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sxn-Ft-AnO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mr9-Gm-2YY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YoB-8r-1hM" kind="relationship" relationship="rootViewController" id="tjt-dz-6mX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AfE-z3-T4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2164" y="670"/>
+        </scene>
+        <!--Share-->
+        <scene sceneID="noB-tJ-dLl">
+            <objects>
+                <tableViewController id="YoB-8r-1hM" customClass="ShareTableViewController" customModule="share" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="FAp-0G-EhO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="shareInput1" id="UKo-sE-YKo" customClass="ShareInputFieldCell" customModule="share" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UKo-sE-YKo" id="Qar-c3-bkj">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="YoB-8r-1hM" id="2Ub-6K-Plb"/>
+                            <outlet property="delegate" destination="YoB-8r-1hM" id="0Ow-vb-va3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Share" id="ArK-kp-gbg">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="IoZ-s4-5YK">
+                            <connections>
+                                <segue destination="6V9-E3-KpF" kind="unwind" unwindAction="unwindList:" id="TSV-bC-fRY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="x7I-L3-8Lx">
+                            <connections>
+                                <segue destination="6V9-E3-KpF" kind="unwind" unwindAction="unwindList:" id="SIJ-bX-7iZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SVO-bU-bkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6V9-E3-KpF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2823" y="904"/>
+        </scene>
+    </scenes>
+</document>
