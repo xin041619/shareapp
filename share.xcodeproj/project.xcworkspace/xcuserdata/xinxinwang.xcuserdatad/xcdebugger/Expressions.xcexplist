@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "share.BrowseTableViewController.tableView (share.BrowseTableViewController)(ObjectiveC.UITableView, numberOfRowsInSection : Swift.Int) -&gt; Swift.Int:BrowseTabelViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "share.BrowseViewController.tableView (share.BrowseViewController)(ObjectiveC.UITableView, cellForRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ObjectiveC.UITableViewCell:BrowseViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "item">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "share.ShareViewController.prepareForSegue (share.ShareViewController)(ObjectiveC.UIStoryboardSegue, sender : Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ():ShareViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.saveButton == sender as NSObject">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "share.MainViewController.prepareForSegue (share.MainViewController)(ObjectiveC.UIStoryboardSegue, sender : Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; ():MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "destViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
