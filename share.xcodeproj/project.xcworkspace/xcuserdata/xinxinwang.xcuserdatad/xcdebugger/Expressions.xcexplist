@@ -6,6 +6,9 @@
          contextName = "share.BrowseTableViewController.tableView (share.BrowseTableViewController)(ObjectiveC.UITableView, numberOfRowsInSection : Swift.Int) -&gt; Swift.Int:BrowseTabelViewController.swift">
       </ContextState>
       <ContextState
+         contextName = "share.ShareViewController.imagePickerController (share.ShareViewController)(ObjectiveC.UIImagePickerController, didFinishPickingMediaWithInfo : Swift.Dictionary&lt;ObjectiveC.NSObject, Swift.AnyObject&gt;) -&gt; ():ShareViewController.swift">
+      </ContextState>
+      <ContextState
          contextName = "share.BrowseViewController.tableView (share.BrowseViewController)(ObjectiveC.UITableView, cellForRowAtIndexPath : ObjectiveC.NSIndexPath) -&gt; ObjectiveC.UITableViewCell:BrowseViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -18,6 +21,14 @@
          <PersistentStrings>
             <PersistentString
                value = "self.saveButton == sender as NSObject">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "share.FbLoginViewController.loginViewFetchedUserInfo (share.FbLoginViewController)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.FBLoginView&gt;, user : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.FBGraphUser&gt;) -&gt; ():FbLoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userDefaults.objectForKey(&quot;username&quot;)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

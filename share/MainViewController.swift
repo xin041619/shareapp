@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
 //        items.append(ShareItem(name: "test", description: "xinxin"))
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -39,6 +40,20 @@ class MainViewController: UIViewController {
                 items.append(shareViewController.shareItem!)
             }           
         }
+        
+        let username: NSString? = userDefaults.objectForKey("username") as NSString?
+        if username != nil {
+            var nameLabel = UILabel(frame: CGRectMake(0, 0, 200, 21))
+            nameLabel.center = CGPointMake(160, 150)
+            nameLabel.textAlignment = NSTextAlignment.Center
+            nameLabel.text = "Welcome: \(username!)"
+            nameLabel.hidden = false
+            
+            self.view.addSubview(nameLabel)
+            
+        }
+        
+
         
         
     }

@@ -9,6 +9,8 @@
 import UIKit
 
 
+var userDefaults = NSUserDefaults.standardUserDefaults()
+
 class FbLoginViewController: UIViewController, FBLoginViewDelegate {
       
     
@@ -41,6 +43,7 @@ class FbLoginViewController: UIViewController, FBLoginViewDelegate {
     
     func loginViewFetchedUserInfo(loginView: FBLoginView!, user: FBGraphUser!) {
         print("username: \(user.name)")
+        userDefaults.setObject(user.name, forKey: "username")
 
         nameLabel.center = CGPointMake(160, 150)
         nameLabel.textAlignment = NSTextAlignment.Center
