@@ -43,5 +43,21 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+
+    <!--  fb login stuff -->
+    <key>FacebookAppID</key>
+    <string>770792652979234</string>
+    <key>FacebookDisplayName</key>
+    <string>xinxinshare</string>
+    <key>URL types</key>
+    <array>
+        <dict>
+            <key>URL Schemes</key>
+            <array>
+                <string>fb770792652979234</string>
+            </array>
+        </dict>
+    </array>
+
 </dict>
 </plist>

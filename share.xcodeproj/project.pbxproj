@@ -10,6 +10,8 @@
 		7B28CA2A1A06FE9800C9D4B0 /* ShareItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28CA291A06FE9800C9D4B0 /* ShareItem.swift */; };
 		7B28CA2C1A07349B00C9D4B0 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28CA2B1A07349B00C9D4B0 /* ShareViewController.swift */; };
 		7B28CA2E1A0743CB00C9D4B0 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28CA2D1A0743CB00C9D4B0 /* ItemCell.swift */; };
+		7B81DC451A0FD34B007488A6 /* FbLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B81DC441A0FD34B007488A6 /* FbLoginViewController.swift */; };
+		7B81DC481A0FD6B9007488A6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC471A0FD6B9007488A6 /* FacebookSDK.framework */; };
 		7BAE7B9719F40C9700310D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE7B9619F40C9700310D2E /* AppDelegate.swift */; };
 		7BAE7B9919F40C9700310D2E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE7B9819F40C9700310D2E /* MainViewController.swift */; };
 		7BAE7B9C19F40C9700310D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAE7B9A19F40C9700310D2E /* Main.storyboard */; };
@@ -33,6 +35,9 @@
 		7B28CA291A06FE9800C9D4B0 /* ShareItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareItem.swift; sourceTree = "<group>"; };
 		7B28CA2B1A07349B00C9D4B0 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareViewController.swift; path = ../ShareViewController.swift; sourceTree = "<group>"; };
 		7B28CA2D1A0743CB00C9D4B0 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		7B81DC431A0FCC3E007488A6 /* FbLoginBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FbLoginBridgeHeader.h; sourceTree = "<group>"; };
+		7B81DC441A0FD34B007488A6 /* FbLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbLoginViewController.swift; sourceTree = "<group>"; };
+		7B81DC471A0FD6B9007488A6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		7BAE7B9119F40C9700310D2E /* share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = share.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAE7B9519F40C9700310D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BAE7B9619F40C9700310D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B81DC481A0FD6B9007488A6 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +73,7 @@
 		7BAE7B8819F40C9700310D2E = {
 			isa = PBXGroup;
 			children = (
+				7B81DC471A0FD6B9007488A6 /* FacebookSDK.framework */,
 				7BAE7B9319F40C9700310D2E /* share */,
 				7BAE7BA919F40C9700310D2E /* shareTests */,
 				7BAE7B9219F40C9700310D2E /* Products */,
@@ -94,6 +101,8 @@
 				7BAE7B9A19F40C9700310D2E /* Main.storyboard */,
 				7BAE7B9D19F40C9700310D2E /* Images.xcassets */,
 				7BAE7B9F19F40C9700310D2E /* LaunchScreen.xib */,
+				7B81DC431A0FCC3E007488A6 /* FbLoginBridgeHeader.h */,
+				7B81DC441A0FD34B007488A6 /* FbLoginViewController.swift */,
 				7BAE7B9419F40C9700310D2E /* Supporting Files */,
 			);
 			path = share;
@@ -187,6 +196,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = 7BAE7B8819F40C9700310D2E;
 			productRefGroup = 7BAE7B9219F40C9700310D2E /* Products */;
@@ -226,6 +236,7 @@
 			files = (
 				7B28CA2C1A07349B00C9D4B0 /* ShareViewController.swift in Sources */,
 				7BAE7B9919F40C9700310D2E /* MainViewController.swift in Sources */,
+				7B81DC451A0FD34B007488A6 /* FbLoginViewController.swift in Sources */,
 				7B28CA2E1A0743CB00C9D4B0 /* ItemCell.swift in Sources */,
 				7BAE7B9719F40C9700310D2E /* AppDelegate.swift in Sources */,
 				7B28CA2A1A06FE9800C9D4B0 /* ShareItem.swift in Sources */,
@@ -355,9 +366,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xinxinwang/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = share/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = share/FbLoginBridgeHeader.h;
 			};
 			name = Debug;
 		};
@@ -366,9 +382,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xinxinwang/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = share/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = share/FbLoginBridgeHeader.h;
 			};
 			name = Release;
 		};
