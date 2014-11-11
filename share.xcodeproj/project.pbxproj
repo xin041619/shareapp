@@ -11,7 +11,14 @@
 		7B28CA2C1A07349B00C9D4B0 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28CA2B1A07349B00C9D4B0 /* ShareViewController.swift */; };
 		7B28CA2E1A0743CB00C9D4B0 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28CA2D1A0743CB00C9D4B0 /* ItemCell.swift */; };
 		7B81DC451A0FD34B007488A6 /* FbLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B81DC441A0FD34B007488A6 /* FbLoginViewController.swift */; };
-		7B81DC481A0FD6B9007488A6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC471A0FD6B9007488A6 /* FacebookSDK.framework */; };
+		7B81DC4C1A1033B1007488A6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC4B1A1033B1007488A6 /* FacebookSDK.framework */; };
+		7B81DC4D1A1033C0007488A6 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC491A103392007488A6 /* Firebase.framework */; };
+		7B81DC4F1A10341B007488A6 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC4E1A10341B007488A6 /* libicucore.dylib */; };
+		7B81DC511A10342C007488A6 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC501A10342C007488A6 /* libc++.dylib */; };
+		7B81DC531A103435007488A6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC521A103435007488A6 /* CFNetwork.framework */; };
+		7B81DC551A10343F007488A6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC541A10343F007488A6 /* Security.framework */; };
+		7B81DC571A103449007488A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B81DC561A103449007488A6 /* SystemConfiguration.framework */; };
+		7B81DC5C1A10360B007488A6 /* FirebaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B81DC5B1A10360B007488A6 /* FirebaseStore.swift */; };
 		7BAE7B9719F40C9700310D2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE7B9619F40C9700310D2E /* AppDelegate.swift */; };
 		7BAE7B9919F40C9700310D2E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAE7B9819F40C9700310D2E /* MainViewController.swift */; };
 		7BAE7B9C19F40C9700310D2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAE7B9A19F40C9700310D2E /* Main.storyboard */; };
@@ -35,9 +42,16 @@
 		7B28CA291A06FE9800C9D4B0 /* ShareItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareItem.swift; sourceTree = "<group>"; };
 		7B28CA2B1A07349B00C9D4B0 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShareViewController.swift; path = ../ShareViewController.swift; sourceTree = "<group>"; };
 		7B28CA2D1A0743CB00C9D4B0 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
-		7B81DC431A0FCC3E007488A6 /* FbLoginBridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FbLoginBridgeHeader.h; sourceTree = "<group>"; };
 		7B81DC441A0FD34B007488A6 /* FbLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbLoginViewController.swift; sourceTree = "<group>"; };
-		7B81DC471A0FD6B9007488A6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		7B81DC491A103392007488A6 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../frameworks/Firebase.framework; sourceTree = "<group>"; };
+		7B81DC4B1A1033B1007488A6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../frameworks/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		7B81DC4E1A10341B007488A6 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		7B81DC501A10342C007488A6 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		7B81DC521A103435007488A6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7B81DC541A10343F007488A6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7B81DC561A103449007488A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7B81DC5A1A103573007488A6 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		7B81DC5B1A10360B007488A6 /* FirebaseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseStore.swift; sourceTree = "<group>"; };
 		7BAE7B9119F40C9700310D2E /* share.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = share.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BAE7B9519F40C9700310D2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BAE7B9619F40C9700310D2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +70,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B81DC481A0FD6B9007488A6 /* FacebookSDK.framework in Frameworks */,
+				7B81DC571A103449007488A6 /* SystemConfiguration.framework in Frameworks */,
+				7B81DC551A10343F007488A6 /* Security.framework in Frameworks */,
+				7B81DC531A103435007488A6 /* CFNetwork.framework in Frameworks */,
+				7B81DC511A10342C007488A6 /* libc++.dylib in Frameworks */,
+				7B81DC4F1A10341B007488A6 /* libicucore.dylib in Frameworks */,
+				7B81DC4D1A1033C0007488A6 /* Firebase.framework in Frameworks */,
+				7B81DC4C1A1033B1007488A6 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,13 +90,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B81DC581A10344F007488A6 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B81DC561A103449007488A6 /* SystemConfiguration.framework */,
+				7B81DC541A10343F007488A6 /* Security.framework */,
+				7B81DC521A103435007488A6 /* CFNetwork.framework */,
+				7B81DC501A10342C007488A6 /* libc++.dylib */,
+				7B81DC4E1A10341B007488A6 /* libicucore.dylib */,
+				7B81DC4B1A1033B1007488A6 /* FacebookSDK.framework */,
+				7B81DC491A103392007488A6 /* Firebase.framework */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
 		7BAE7B8819F40C9700310D2E = {
 			isa = PBXGroup;
 			children = (
-				7B81DC471A0FD6B9007488A6 /* FacebookSDK.framework */,
+				7B81DC581A10344F007488A6 /* frameworks */,
+				7BAE7B9219F40C9700310D2E /* Products */,
 				7BAE7B9319F40C9700310D2E /* share */,
 				7BAE7BA919F40C9700310D2E /* shareTests */,
-				7BAE7B9219F40C9700310D2E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,17 +126,18 @@
 		7BAE7B9319F40C9700310D2E /* share */ = {
 			isa = PBXGroup;
 			children = (
-				7B28CA2B1A07349B00C9D4B0 /* ShareViewController.swift */,
+				7B81DC5A1A103573007488A6 /* BridgeHeader.h */,
 				7BAE7B9619F40C9700310D2E /* AppDelegate.swift */,
-				7BAE7B9819F40C9700310D2E /* MainViewController.swift */,
 				7BF6A8671A0B407400738A70 /* BrowseViewController.swift */,
-				7B28CA291A06FE9800C9D4B0 /* ShareItem.swift */,
+				7B81DC441A0FD34B007488A6 /* FbLoginViewController.swift */,
+				7B81DC5B1A10360B007488A6 /* FirebaseStore.swift */,
 				7B28CA2D1A0743CB00C9D4B0 /* ItemCell.swift */,
-				7BAE7B9A19F40C9700310D2E /* Main.storyboard */,
+				7BAE7B9819F40C9700310D2E /* MainViewController.swift */,
+				7B28CA291A06FE9800C9D4B0 /* ShareItem.swift */,
+				7B28CA2B1A07349B00C9D4B0 /* ShareViewController.swift */,
 				7BAE7B9D19F40C9700310D2E /* Images.xcassets */,
 				7BAE7B9F19F40C9700310D2E /* LaunchScreen.xib */,
-				7B81DC431A0FCC3E007488A6 /* FbLoginBridgeHeader.h */,
-				7B81DC441A0FD34B007488A6 /* FbLoginViewController.swift */,
+				7BAE7B9A19F40C9700310D2E /* Main.storyboard */,
 				7BAE7B9419F40C9700310D2E /* Supporting Files */,
 			);
 			path = share;
@@ -238,6 +273,7 @@
 				7BAE7B9919F40C9700310D2E /* MainViewController.swift in Sources */,
 				7B81DC451A0FD34B007488A6 /* FbLoginViewController.swift in Sources */,
 				7B28CA2E1A0743CB00C9D4B0 /* ItemCell.swift in Sources */,
+				7B81DC5C1A10360B007488A6 /* FirebaseStore.swift in Sources */,
 				7BAE7B9719F40C9700310D2E /* AppDelegate.swift in Sources */,
 				7B28CA2A1A06FE9800C9D4B0 /* ShareItem.swift in Sources */,
 				7BF6A8681A0B407400738A70 /* BrowseViewController.swift in Sources */,
@@ -369,11 +405,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/xinxinwang/Documents/FacebookSDK,
+					/Users/xinxinwang/Programming/ios/frameworks,
+					/Users/xinxinwang/Programming/ios/frameworks/FacebookSDK,
 				);
 				INFOPLIST_FILE = share/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = share/FbLoginBridgeHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = share/BridgeHeader.h;
 			};
 			name = Debug;
 		};
@@ -385,11 +424,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/xinxinwang/Documents/FacebookSDK,
+					/Users/xinxinwang/Programming/ios/frameworks,
+					/Users/xinxinwang/Programming/ios/frameworks/FacebookSDK,
 				);
 				INFOPLIST_FILE = share/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = share/FbLoginBridgeHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = share/BridgeHeader.h;
 			};
 			name = Release;
 		};

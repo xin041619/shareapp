@@ -17,6 +17,9 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var firebaseStore = FirebaseStore()
+        firebaseStore.setValue("abc", value: "value")
+        firebaseStore.getValue("abc")
         
         
 //        items.append(ShareItem(name: "test", description: "xinxin"))
@@ -25,6 +28,7 @@ class MainViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     
